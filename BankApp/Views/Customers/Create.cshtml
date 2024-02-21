@@ -1,0 +1,27 @@
+@model Customer
+
+<form method="post" action="~/Customers/Create">
+    <div>
+        <label>Name</label>
+        <input  type="text" asp-for="Name">
+    </div>
+    <div>
+        <label>AccountType</label>
+        <select id="AccountType" asp-for="AccountType">
+            <option value="current">Current Account</option>
+            <option value="saving">Saving Account</option>
+            <option value="fixed">Fixed Account</option>
+        </select>
+    </div>
+    <div>
+        <label>AccountNumber</label>
+        <input type="number" asp-for="AccountNumber">
+    </div>
+    <div>
+        <label>AccessCode</label>
+        <input type="Password" asp-for="AccessCode">
+    </div>
+    <div>
+        <button type="submit">Create</button>
+    </div>
+</form>
