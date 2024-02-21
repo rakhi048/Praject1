@@ -6,6 +6,7 @@ public class Customer
 
     public string AccountNumber {get;set;}
     public string AccessCode{get;set;}
+    public string DipositAmount{get;set;}
     
 }
 

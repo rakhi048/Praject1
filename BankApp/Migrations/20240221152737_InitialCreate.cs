@@ -19,7 +19,8 @@ namespace BankApp.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AccountType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AccountNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AccessCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    AccessCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DipositAmount = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

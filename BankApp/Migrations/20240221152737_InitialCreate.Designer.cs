@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BankApp.Migrations
 {
     [DbContext(typeof(ProductMgmtDbContext))]
-    [Migration("20240221100851_InitialCreate")]
+    [Migration("20240221152737_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -40,6 +40,10 @@ namespace BankApp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AccountType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DipositAmount")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

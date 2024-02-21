@@ -8,17 +8,19 @@
                 <th>AccountType</th>
                 <th>AccountNumber</th>
                 <th>AccessCode</th>
+                <th>DipositAmount</th>
             </tr>
         </thead>
         <tbody>
-            @foreach(var product in Model)
+            @foreach(var customer in Model)
             {
                 <tr>
-                    <td>@product.Id</td>
-                    <td>@product.Name</td>
-                    <td>@product.AccountType</td>
-                    <td>@product.AccountNumber</td>
-                    <td>@product.AccessCode</td>
+                    <td>@customer.Id</td>
+                    <td>@customer.Name</td>
+                    <td>@customer.AccountType</td>
+                    <td>@customer.AccountNumber</td>
+                    <td>@customer.AccessCode</td>
+                    <td>@customer.DipositAmount</td>
                 </tr>
             }
         </tbody>
