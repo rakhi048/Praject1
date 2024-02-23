@@ -3,7 +3,7 @@ using BankApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<ProductMgmtDbContext>(options=>{
+builder.Services.AddDbContext<BankAppDbContext>(options=>{
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 // Add services to the container.
